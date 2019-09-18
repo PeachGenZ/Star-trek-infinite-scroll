@@ -1,5 +1,11 @@
-<div align="center">
+<div *ngIf="!character.deceased" align="center">
     <p>
+        {{character.name}}
+    </p>
+</div>
+
+<div *ngIf="!character.deceased" align="center">
+    <p style="color: gray">
         {{character.name}}
     </p>
 </div>
